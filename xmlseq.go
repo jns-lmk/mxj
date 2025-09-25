@@ -834,8 +834,8 @@ func mapToXmlSeqIndent(doIndent bool, s *string, key string, value interface{}, 
 		}
 	} else if !noEndTag {
 		if useGoXmlEmptyElemSyntax {
-			*s += `</` + key + ">"
-			// *s += "></" + key + ">"
+			// *s += `</` + key + ">"
+			*s += `></` + key + ">"
 		} else {
 			*s += "/>"
 		}
